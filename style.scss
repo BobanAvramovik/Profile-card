@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 180%;
+  background-color: hsl(185, 75%, 39%);
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bgImg {
+  position: absolute;
+
+  &--1 {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  &--2 {
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eee;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    margin-top: -55px;
+    border-radius: 50%;
+    border: 0.5rem solid #fff;
+  }
+}
+
+.name {
+  font-weight: 700;
+}
+
+.age {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.city {
+  display: block;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  text-justify: justify;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  font-weight: bold;
+}
+
+.modified {
+  color: hsl(0, 0%, 59%);
+  padding-left: 1rem;
+  font-weight: normal;
+}
+
+.city {
+  font-size: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 0.1rem solid hsl(0, 0%, 59%);
+}
+
+.stats {
+  display: flex;
+  margin: 2.5rem 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.3%;
+    align-items: center;
+  }
+}
+
+.mod {
+    margin-top: .5rem;
+    font-size: 60%;
+    color: hsl(0, 0%, 59%);
+}
+
+.mod2 {
+    font-weight: bold;
+}
